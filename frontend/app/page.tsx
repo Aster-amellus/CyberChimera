@@ -52,18 +52,29 @@ export default function Home() {
                 <a href="/" className="text-purple-600 font-medium">
                   Home
                 </a>
+                <a href="/create" className="text-gray-600 hover:text-gray-900 transition-colors">
+                  Create
+                </a>
                 <a href="/analytics" className="text-gray-600 hover:text-gray-900 transition-colors">
                   Analytics
                 </a>
               </nav>
             </div>
             <div className="flex items-center space-x-4">
-              <a 
-                href="/analytics"
-                className="md:hidden px-3 py-1 bg-purple-100 text-purple-700 rounded-lg hover:bg-purple-200 transition-colors text-sm"
-              >
-                📊 Analytics
-              </a>
+              <div className="md:hidden flex gap-2">
+                <a 
+                  href="/create"
+                  className="px-3 py-1 bg-pink-100 text-pink-700 rounded-lg hover:bg-pink-200 transition-colors text-sm"
+                >
+                  🎨 Create
+                </a>
+                <a 
+                  href="/analytics"
+                  className="px-3 py-1 bg-purple-100 text-purple-700 rounded-lg hover:bg-purple-200 transition-colors text-sm"
+                >
+                  📊 Analytics
+                </a>
+              </div>
               <ConnectButton />
             </div>
           </div>
@@ -123,7 +134,7 @@ export default function Home() {
         </div>
 
         {/* Info Section */}
-        <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="mt-12 grid grid-cols-1 md:grid-cols-4 gap-6">
           <div className="bg-white rounded-lg shadow p-6">
             <div className="flex items-center mb-3">
               <span className="text-2xl mr-3">🧬</span>
@@ -153,6 +164,16 @@ export default function Home() {
               After birth, all contributors can mint a unique NFT commemorating their participation.
             </p>
           </div>
+          
+          <a href="/create" className="bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-lg shadow p-6 hover:from-purple-600 hover:to-pink-600 transition-all">
+            <div className="flex items-center mb-3">
+              <span className="text-2xl mr-3">✏️</span>
+              <h3 className="text-lg font-semibold">Create Custom Art</h3>
+            </div>
+            <p>
+              Design your own pixel art characters and mint them as unique NFTs!
+            </p>
+          </a>
         </div>
 
         {/* Contract Info */}

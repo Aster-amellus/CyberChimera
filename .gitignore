@@ -1,0 +1,123 @@
+
+# Environment variables
+.env
+.env.*
+.env.local
+.env.development
+.env.test
+.env.production
+!.env.example
+
+# Hardhat files
+cache/
+typechain/
+typechain-types/
+coverage/
+coverage.json
+*.log
+gas-report.txt
+
+
+# Next.js
+frontend/.next/
+frontend/out/
+frontend/build/
+frontend/dist/
+*.tsbuildinfo
+next-env.d.ts
+
+# Debug & Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+logs
+*.log
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# OS
+.DS_Store
+*.swp
+*.swo
+*.swn
+*~
+Thumbs.db
+desktop.ini
+.Spotlight-V100
+.Trashes
+
+# IDE
+.vscode/
+!.vscode/extensions.json
+!.vscode/settings.json
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.iml
+.project
+.classpath
+.settings/
+
+# Production
+dist/
+build/
+out/
+
+# Scripts output
+scripts/output/
+scripts/*.log
+
+# Testing
+test-results/
+playwright-report/
+playwright/.cache/
+.nyc_output
+lib-cov
+*.lcov
+
+# Package managers
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
+.pnp.*
+pnpm-lock.yaml
+yarn.lock
+
+# Misc
+*.orig
+.cache
+.parcel-cache
+.turbo
+.vercel
+.netlify
+
+# Private keys & Security
+*.pem
+*.key
+*.p12
+*.pfx
+*.crt
+*.cer
+private.key
+secrets.json
+
+# Temporary files
+tmp/
+temp/
+.tmp/
+*.tmp
+
+# Database
+*.sqlite
+*.sqlite3
+*.db
+
+# Generated files
+generated/
+.docusaurus
+.cache-loader
